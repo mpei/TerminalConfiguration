@@ -81,3 +81,8 @@ URxvt*scrollBar_right: false
 # scrollbar style - rxvt (default), plain, next, or xterm
 URxvt*scrollstyle: rxvt
 
+# Clickable links
+URxvt.perl-ext-common:  default,matcher
+URxvt.urlLauncher:      /usr/bin/luakit
+URxvt.matcher.button:   1 
+
