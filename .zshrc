@@ -54,6 +54,7 @@ bindkey "^[3;5~" delete-char
 # Switch back to emacs mode
 bindkey -e
 
+export TERM=ansi
 
 #
 # ALIASES

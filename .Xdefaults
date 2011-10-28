@@ -1,17 +1,5 @@
 rxvt*title: Linux
 
-# Keybindings
-xterm*VT100.translations:   #override \
-       <Key>BackSpace:    string(0x7F) \n\
-       <Key>Insert:       string(0x1b) string("[2~")\n\
-       <Key>Delete:       string(0x1b) string("[3~")\n\
-       <Key>Home:         string(0x1b) string("[1~")\n\
-       <Key>End:         string(0x1b) string("[4~")\n\
-       <Key>Page_Up:      string(0x1b) string("[5~")\n\
-       <Key>Page_Down:    string(0x1b) string("[6~")\n\
-       <KeyPress>Prior : scroll-back(1,page)\n\
-       <KeyPress>Next : scroll-forw(1,page)
-
 # transparency - true or false (default)
 URxvt*transparent: true
 
