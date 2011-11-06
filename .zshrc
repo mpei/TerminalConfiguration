@@ -46,14 +46,8 @@ zstyle ':completion:*:cd:*' ignore-parents parent pwd
 bindkey "^[[A" history-beginning-search-backward     # [arrow-up]
 bindkey "^[[B" history-beginning-search-forward      # [arrow-down]
 
-bindkey "^[OF"   end-of-line
-bindkey "^[OH"   beginning-of-line
-bindkey "^[[3~"  delete-char
-bindkey "^[3;5~" delete-char
-
 # Switch back to emacs mode
 bindkey -e
-
 
 #
 # ALIASES
@@ -127,7 +121,7 @@ export AICCM_SLAKO_PATH="/home/mpei/aiccm_slako/"
 #
 # PATH SETTINGS
 #
-export PATH=".:/opt/intel/composerxe/bin:/home/mpei/bin:/home/mpei/chemistry/scripts:/home/mpei/ase/tools:/home/mpei/Software/orca_stable:/home/mpei/Software/orca_current/_64_:/home/mpei/chemistry/software/isotropy:/home/mpei/Software/eclipse:$PATH"
+export PATH=".:/opt/cxoffice/bin:/opt/intel/composerxe/bin:/home/mpei/bin:/home/mpei/chemistry/scripts:/home/mpei/ase/tools:/home/mpei/Software/orca_stable:/home/mpei/Software/orca_current/_64_:/home/mpei/chemistry/software/isotropy:/home/mpei/Software/eclipse:$PATH"
 #
 export LD_LIBRARY_PATH="/opt/intel/lib/intel64/:/opt/intel/mkl/lib/intel64:/opt/intel/composerxe/lib/intel64:/home/mpei/lib:/home/mpei/lib/openmpi:/home/mpei/lib64:$HOME/aiccm/aiccm:$LD_LIBRARY_PATH"
 #
