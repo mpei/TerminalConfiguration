@@ -49,11 +49,8 @@ bindkey "^[[B" history-beginning-search-forward      # [arrow-down]
 # Switch back to emacs mode
 bindkey -e
 
-<<<<<<< HEAD
-export TERM=ansi
+# export TERM=ansi
 
-=======
->>>>>>> 46344584ac44ab7f2a4266528d34c4c51fe90928
 #
 # ALIASES
 #
@@ -149,7 +146,7 @@ export INFOPATH="/usr/local/texlive/2011/texmf/doc/info:$INFOPATH"
 export TEXMFHOME="/usr/local/texlive/2011/texmf"
 export TEXMFCNF="/usr/local/texlive/2011/texmf/web2c"
 
-export  LD_LIBRARY_PATH="/home/mpei/Software/molekel_5_4_0_linux_x86_64/lib:$LD_LIBRARY_PATH"
+#export  LD_LIBRARY_PATH="/home/mpei/Software/molekel_5_4_0_linux_x86_64/lib:$LD_LIBRARY_PATH"
 
 #------------------------------------------------------------------------
 ## this is for XCRYSDEN 1.5.24; added by XCRYSDEN installation on

@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 rxvt*title: Linux
 
-=======
->>>>>>> 46344584ac44ab7f2a4266528d34c4c51fe90928
 # transparency - true or false (default)
 URxvt*transparent: true
 
@@ -72,11 +69,7 @@ URxvt*scrollBar_right: false
 # scrollbar style - rxvt (default), plain, next, or xterm
 URxvt*scrollstyle: rxvt
 
-<<<<<<< HEAD
 # Clickable links
 URxvt.perl-ext-common:  default,matcher
 URxvt.urlLauncher:      /usr/bin/luakit
 URxvt.matcher.button:   1 
-
-=======
->>>>>>> 46344584ac44ab7f2a4266528d34c4c51fe90928
