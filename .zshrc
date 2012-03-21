@@ -125,7 +125,7 @@ export AICCM_SLAKO_PATH="/home/mpei/aiccm_slako/"
 #
 export PATH=".:/opt/cxoffice/bin:/opt/intel/composerxe/bin:/home/mpei/bin:/home/mpei/chemistry/scripts:/home/mpei/ase/tools:/home/mpei/Software/orca_stable:/home/mpei/Software/orca_current/_64_:/home/mpei/chemistry/software/isotropy:/home/mpei/Software/eclipse:$PATH"
 #
-export LD_LIBRARY_PATH="/opt/intel/lib/intel64/:/opt/intel/mkl/lib/intel64:/opt/intel/composerxe/lib/intel64:/home/mpei/lib:/home/mpei/lib/openmpi:/home/mpei/lib64:$HOME/aiccm/aiccm:$LD_LIBRARY_PATH"
+export LD_LIBRARY_PATH="/opt/intel/lib/intel64/:/opt/intel/mkl/lib/intel64:/opt/intel/composerxe/lib/intel64:/home/mpei/lib:$LD_LIBRARY_PATH"
 #
 export LIBRARY_PATH="$LD_LIBRARY_PATH"
 #
@@ -146,17 +146,11 @@ export INFOPATH="/usr/local/texlive/2011/texmf/doc/info:$INFOPATH"
 export TEXMFHOME="/usr/local/texlive/2011/texmf"
 export TEXMFCNF="/usr/local/texlive/2011/texmf/web2c"
 
-#export  LD_LIBRARY_PATH="/home/mpei/Software/molekel_5_4_0_linux_x86_64/lib:$LD_LIBRARY_PATH"
-
-#------------------------------------------------------------------------
-## this is for XCRYSDEN 1.5.24; added by XCRYSDEN installation on
-## Mon Jul 18 14:18:26 CEST 2011
-##------------------------------------------------------------------------
-XCRYSDEN_TOPDIR=/home/mpei/Software/XCrySDen-1.5.24-bin-semishared
-XCRYSDEN_SCRATCH=/home/mpei/xcrys_tmp
-export XCRYSDEN_TOPDIR XCRYSDEN_SCRATCH
-PATH="$XCRYSDEN_TOPDIR:$PATH:$XCRYSDEN_TOPDIR/scripts:$XCRYSDEN_TOPDIR/util"
-
+# deMon2k
+export CREX_ROOT=/home/mpei/deMon2k
+export CREX_HOME=/home/mpei/deMon2k
+export MANPATH=/home/mpei/deMon2k/deMon/man:\$MANPATH
+export PATH=/home/mpei/deMon2k/deMon/bin:$PATH
 
 export WINDOW_MANAGER=/usr/bin/awesome
 
