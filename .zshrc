@@ -81,8 +81,11 @@ alias xc="xcrysden --crystal_inp"
 alias xco="xcrysden --crystal_f9"
 alias xp='xprop | grep "WM_WINDOW_ROLE\|WM_CLASS" && echo "WM_CLASS(STRING) = \"NAME\", \"CLASS\""'
 
-alias pysetup='python setup.py clean config build install --home=/home/mpei'
-alias pysetup_intel='python setup.py config --compiler=intel --fcompiler=intel build_clib --compiler=intel --fcompiler=intel build_ext --compiler=intel --fcompiler=intel install --home=/home/mpei'
+alias pysetup='python setup.py clean config build install --prefix=/home/mpei'
+alias pysetup_intel='python setup.py config --compiler=intel --fcompiler=intel build_clib --compiler=intel --fcompiler=intel build_ext --compiler=intel --fcompiler=intel install --prefix=/home/mpei'
+
+alias pysetup_numpy='python setup.py config --compiler=intelem --fcompiler=intelem build_clib --compiler=intelem --fcompiler=intelem build_ext --compiler=intelem --fcompiler=intelem install --prefix=/home/mpei'
+alias pysetup_scipy='python setup.py config --compiler=intelem --fcompiler=intelem build_clib --compiler=intelem --fcompiler=intelem build_ext --compiler=intelem --fcompiler=intelem install --prefix=/home/mpei'
 
 #
 # COMPILER
@@ -107,7 +110,7 @@ alias pysetup_intel='python setup.py config --compiler=intel --fcompiler=intel b
 #
 # PYTHON
 #
-export PYTHONPATH="/home/mpei/lib/python:/home/mpei/ase:/home/mpei/gpaw:/home/mpei/aiccm:/home/mpei/chemistry/software/python/lib/python2.5/site-packages:/home/mpei/chemistry/software/pyminuit2-0.0.1/lib:$PYTHONPATH"
+export PYTHONPATH="/home/mpei/lib/python2.7/site-packages:$PYTHONPATH"
 #
 export LD_LIBRARY_PATH="/usr/lib/root/5.18:$LD_LIBRARY_PATH"
 
@@ -153,6 +156,14 @@ export MANPATH=/home/mpei/deMon2k/deMon/man:\$MANPATH
 export PATH=/home/mpei/deMon2k/deMon/bin:$PATH
 
 export WINDOW_MANAGER=/usr/bin/awesome
+
+# Compiler
+source /opt/intel/bin/iccvars.sh intel64
+source /opt/intel/bin/ifortvars.sh intel64
+
+# Go
+export GOROOT=$HOME/Software/go
+export PATH=$PATH:$GOROOT/bin
 
 autoload -U promptinit
 promptinit
