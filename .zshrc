@@ -126,8 +126,6 @@ export AICCM_SLAKO_PATH="/home/mpei/aiccm_slako/"
 #
 # PATH SETTINGS
 #
-export PATH=".:/opt/cxoffice/bin:/opt/intel/composerxe/bin:/home/mpei/bin:/home/mpei/chemistry/scripts:/home/mpei/ase/tools:/home/mpei/Software/orca_stable:/home/mpei/Software/orca_current/_64_:/home/mpei/chemistry/software/isotropy:/home/mpei/Software/eclipse:$PATH"
-#
 export LD_LIBRARY_PATH="/opt/intel/lib/intel64/:/opt/intel/mkl/lib/intel64:/opt/intel/composerxe/lib/intel64:/home/mpei/lib:$LD_LIBRARY_PATH"
 #
 export LIBRARY_PATH="$LD_LIBRARY_PATH"
@@ -158,14 +156,18 @@ export PATH=/home/mpei/deMon2k/deMon/bin:$PATH
 export WINDOW_MANAGER=/usr/bin/awesome
 
 # Compiler
-source /opt/intel/bin/iccvars.sh intel64
-source /opt/intel/bin/ifortvars.sh intel64
+# source /opt/intel/bin/iccvars.sh intel64
+# source /opt/intel/bin/ifortvars.sh intel64
 
 # Go
 export GOROOT=$HOME/Software/go
 export PATH=$PATH:$GOROOT/bin
 
+export PYTHONPATH=/home/mpei/Software/UbuntuOne/ubuntu-sso-client:$PYTHONPATH
+export PYTHONPATH=/home/mpei/Software/UbuntuOne/ubuntuone-storage-protocol:$PYTHONPATH
+export PYTHONPATH=/home/mpei/Software/UbuntuOne/ubuntuone-client:$PYTHONPATH
+export PYTHONPATH=/home/mpei/Software/UbuntuOne/configglue:$PYTHONPATH
+
 autoload -U promptinit
 promptinit
 prompt ubuntu
-
