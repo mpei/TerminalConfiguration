@@ -81,6 +81,7 @@ alias xc="xcrysden --crystal_inp"
 alias xco="xcrysden --crystal_f9"
 alias xp='xprop | grep "WM_WINDOW_ROLE\|WM_CLASS" && echo "WM_CLASS(STRING) = \"NAME\", \"CLASS\""'
 
+alias pybuild='python setup.py clean config build'
 alias pysetup='python setup.py clean config build install --prefix=/home/mpei'
 alias pysetup_intel='python setup.py config --compiler=intel --fcompiler=intel build_clib --compiler=intel --fcompiler=intel build_ext --compiler=intel --fcompiler=intel install --prefix=/home/mpei'
 
@@ -111,8 +112,6 @@ alias pysetup_scipy='python setup.py config --compiler=intelem --fcompiler=intel
 # PYTHON
 #
 export PYTHONPATH="/home/mpei/lib/python2.7/site-packages:$PYTHONPATH"
-#
-export LD_LIBRARY_PATH="/usr/lib/root/5.18:$LD_LIBRARY_PATH"
 
 # GPAW / ASE
 export ASE_TAGS=https://svn.fysik.dtu.dk/projects/ase/tags
@@ -120,13 +119,15 @@ export GPAW_TAGS=https://svn.fysik.dtu.dk/projects/gpaw/tags
 export GPAW_SETUP_PATH="/home/mpei/Software/gpaw-setups"
 
 # AICCM
-export AICCM_BASIS_PATH="/home/mpei/aiccm_basis/"
-export AICCM_SLAKO_PATH="/home/mpei/aiccm_slako/"
+export AICCM_BASIS_PATH="/home/mpei/aiccm/basis/"
+export AICCM_SLAKO_PATH="/home/mpei/aiccm/slako/"
  
 #
 # PATH SETTINGS
 #
-export LD_LIBRARY_PATH="/opt/intel/lib/intel64/:/opt/intel/mkl/lib/intel64:/opt/intel/composerxe/lib/intel64:/home/mpei/lib:$LD_LIBRARY_PATH"
+export PATH="/home/mpei/bin:/opt/intel/bin:/opt/cxoffice/bin:/home/mpei/chemistry/scripts:/home/mpei/Software/xcrysden-1.5.53-bin-shared:$PATH"
+#
+export LD_LIBRARY_PATH="/home/mpei/aiccm/aiccm:/opt/intel/lib/intel64/:/opt/intel/mkl/lib/intel64:/opt/intel/composerxe/lib/intel64:/home/mpei/lib:$LD_LIBRARY_PATH"
 #
 export LIBRARY_PATH="$LD_LIBRARY_PATH"
 #
@@ -156,17 +157,23 @@ export PATH=/home/mpei/deMon2k/deMon/bin:$PATH
 export WINDOW_MANAGER=/usr/bin/awesome
 
 # Compiler
-# source /opt/intel/bin/iccvars.sh intel64
-# source /opt/intel/bin/ifortvars.sh intel64
+source /opt/intel/bin/iccvars.sh intel64
+source /opt/intel/bin/ifortvars.sh intel64
 
 # Go
 export GOROOT=$HOME/Software/go
 export PATH=$PATH:$GOROOT/bin
 
-export PYTHONPATH=/home/mpei/Software/UbuntuOne/ubuntu-sso-client:$PYTHONPATH
-export PYTHONPATH=/home/mpei/Software/UbuntuOne/ubuntuone-storage-protocol:$PYTHONPATH
-export PYTHONPATH=/home/mpei/Software/UbuntuOne/ubuntuone-client:$PYTHONPATH
-export PYTHONPATH=/home/mpei/Software/UbuntuOne/configglue:$PYTHONPATH
+# Ubuntu One
+export PYTHONPATH="/home/mpei/Software/UbuntuOneStable/configglue-1.0.3:$PYTHONPATH"
+export PYTHONPATH="/home/mpei/Software/UbuntuOneStable/dirspec-3.0.0:$PYTHONPATH"
+export PYTHONPATH="/home/mpei/Software/UbuntuOneStable/ubuntuone-client-2.0.0:$PYTHONPATH"
+export PYTHONPATH="/home/mpei/Software/UbuntuOneStable/ubuntu-sso-client-1.3.3:$PYTHONPATH"
+#
+export PATH="/home/mpei/Software/UbuntuOneStable/ubuntu-sso-client-1.3.3/bin:$PATH"
+export PATH="/home/mpei/Software/UbuntuOneStable/ubuntuone-client-2.0.0/bin:$PATH"
+
+export LD_LIBRARY_PATH="/home/mpei/Software/UbuntuOneStable/ubuntuone-client-2.0.0/libsyncdaemon:$LD_LIBRARY_PATH"
 
 autoload -U promptinit
 promptinit
